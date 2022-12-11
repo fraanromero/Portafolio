@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+ }
+ 
+
+body{
+    background: black;
+
+    }
+    nav ul{
+        background-color: red;
+         width: 100%;
+      list-style-type: none;  
+      text-align: center;
+     }
+     nav li{
+        display: inline-flex;
+     }
+     nav a{
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        width: 150px;
+     }
+     nav li :hover{
+        background-color: black;
+     }
+    
+     img{
+        width: 100%;
+        margin-top: 25px;
+    }
+    h1{
+        text-align: center;
+    padding: 20px;
+        text-align: center;
+        color: white;
+        text-shadow:1px 2px 2px red, 0 0 25px red, 0 0 5px red;
+    }
+    p{
+        color:white
+    }
+
+    h4{
+        color: white;
+    }
+
+div.galeria{
+    margin: 10px 20px;
+    box-shadow: 0 4px 8px 0 #C30A3B, 0 6px 20px 0 rgba(0,0,0,0.19);
+    float: left;
+    width: 310px;
+}
+div.galeria img{
+    width: 100%;
+    height: auto;
+}
+
+div.galeria:hover{
+    border: 1px solid #C30A3B ;
+    transform: rotate(-3deg);
+}
+
+div.pie{
+    text-align: center;
+    text-shadow: 2px 2px 5px #2e04c7 ;
+    padding: 10px;
+}
+
+    form{
+        margin-top: 100px;
+        width: 55%;
+        
+    }
+    h3{
+        color: white;
+    }
+    iframe{
+        margin-left: 80px;
+        margin-top: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    footer{
+        height: 100px;
+        background-color: red;
+        text-align: center;
+        color: white;
+        margin-top: 50px;
+      }
+
+      a{
+        text-decoration: none;
+        color: black;
+    
+        }
+        .seguimiento{
+            margin-top: 10px;
+        }
+        .social-bar{
+            margin-top: 10px;
+            top: 35%;
+            font-size: 2.5rem;
+            display: inflex;
+            flex: content;
+            align-items: flex-end;
+            
+        }
+        .icon{
+            color: white;
+            padding: .7rem;
+        }
+        iframe{
+            margin-top:50px ;
+            text-align: center;
+            align-self: center;
+        }
