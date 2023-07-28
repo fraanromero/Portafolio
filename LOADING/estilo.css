@@ -1,0 +1,16 @@
+.loading{
+    border: 15px solid rgb(255, 17, 0);
+    width: 100px;
+    height: 100px;
+    border-radius: 600%;
+    border-right-color:transparent ;
+    animation: rot 1s linear infinite;
+    margin: auto;
+    place-items: center;
+
+}
+@keyframes rot {
+    100%{
+        transform: rotate(360deg);
+    }
+}
