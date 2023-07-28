@@ -1,0 +1,113 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #000;
+	width: 100%;
+	height: 100vh;
+}
+.main-content{
+	width: 100%;
+	height: 100%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	overflow: hidden;
+}
+h2{
+	margin-top: 10px;
+	color: #fff;
+	font-family: cursive;
+	letter-spacing: 1px;
+}
+.content-marker{
+	width: 500px;
+	height: 350px;
+	position: relative;
+}
+.body-marker{
+	width: 350px;
+	height: 50px;
+	position: relative;
+	transition: 1s;
+	z-index: 2;
+	transform: translate(36%,150px) rotateZ(-70deg);
+	animation: move_pencil 8s infinite;
+}
+@keyframes move_pencil{
+	0%{
+		transform: translate(36%,150px) rotateZ(-70deg);
+	}
+	25%{
+		transform: translate(30%,150px) rotateZ(100deg);
+	}
+	50%{
+		transform: translate(100%,150px) rotateZ(100deg);
+	}
+	75%{
+		transform: translate(100%,150px) rotateZ(-80deg);
+	}
+}
+.body-marker .body{
+	width: 300px;
+	height: 50px;
+	border-radius: 10px 2px 2px 10px;
+	background: #333;
+}
+.body-marker .head{
+	width: 40px;
+	height: 50px;
+	clip-path: polygon(0 0, 40px 20px,40px 30px,0 50px);
+	background: #333;
+	position: absolute;
+	top:0;
+	left: 299px;
+}
+.body-marker .pointer{
+	width: 8px;
+	height: 10px;
+	background: yellow;
+	position: absolute;
+	top: 20px;
+	left: 342px;
+	border-radius: 0 4px 4px 0;
+}
+.body-marker .paper{
+	width: 260px;
+	height: 50px;
+	background: yellow;
+	position: absolute;
+	top: 0;
+	left: 30px;
+}
+.line-draw{
+	width: 0%;
+	margin-left: 50%;
+	height: 12px;
+	border-radius: 6px;
+	background: blue ;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	animation: draw_line 8s infinite;
+}
+@keyframes draw_line{
+	0%{
+		width: 0%;
+	}
+	25%{
+		width: 0%;
+		margin-left: 50%;
+	}
+	50%{
+		width: 100%;
+		margin-left: 0%;
+	}
+	75%{
+		width: 100%;
+		margin-left: 0%;
+	}
+}
