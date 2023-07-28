@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor{
+    height: 155px;
+    width: 320px;
+    position: relative;
+    transform: rotate(180deg);
+}
+.color_fondo{
+    height: 0px;
+    width: 100%;
+    background-color: rgb(2, 146, 190);
+    position: absolute;
+}
+.numero{
+    height: 100%;
+    width: 100%;
+    font-size: 12.8em;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #555;
+    background-color: white;
+    position: absolute;
+    mix-blend-mode: screen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-180deg);
+}
